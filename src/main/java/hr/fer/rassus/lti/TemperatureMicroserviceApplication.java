@@ -1,8 +1,8 @@
 package hr.fer.rassus.lti;
 
-import com.lti.entitiy.Temperature;
-import com.lti.repository.TemperatureRepository;
-import com.lti.util.TemperatureLoader;
+import hr.fer.rassus.lti.entitiy.Temperature;
+import hr.fer.rassus.lti.repository.TemperatureRepository;
+import hr.fer.rassus.lti.util.TemperatureLoader;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
