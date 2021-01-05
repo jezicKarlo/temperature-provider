@@ -1,5 +1,8 @@
 package hr.fer.rassus.lti.service;
 
+import hr.fer.rassus.lti.repository.TemperatureRepository;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalTime;
 
 @Service
