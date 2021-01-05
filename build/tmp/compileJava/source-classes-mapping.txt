@@ -8,9 +8,9 @@ hr/fer/rassus/lti/entitiy/Temperature.java
  hr.fer.rassus.lti.entitiy.Temperature
 hr/fer/rassus/lti/service/TemperatureService.java
  hr.fer.rassus.lti.service.TemperatureService
-hr/fer/rassus/lti/controller/Entrypoint.java
- hr.fer.rassus.lti.controller.Entrypoint
-hr/fer/rassus/lti/repository/TemperatureRepository.java
- hr.fer.rassus.lti.repository.TemperatureRepository
 hr/fer/rassus/lti/util/TemperatureHolder.java
  hr.fer.rassus.lti.util.TemperatureHolder
+hr/fer/rassus/lti/repository/TemperatureRepository.java
+ hr.fer.rassus.lti.repository.TemperatureRepository
+hr/fer/rassus/lti/controller/Entrypoint.java
+ hr.fer.rassus.lti.controller.Entrypoint
