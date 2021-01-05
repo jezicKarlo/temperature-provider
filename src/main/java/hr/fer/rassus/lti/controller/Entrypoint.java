@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/temperatures")
+@RequestMapping("current-reading")
 public class Entrypoint {
 
     private final TemperatureService temperatureService;
