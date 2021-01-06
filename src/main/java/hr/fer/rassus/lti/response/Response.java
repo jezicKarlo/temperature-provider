@@ -5,10 +5,10 @@ import lombok.Data;
 @Data
 public class Response {
 
-    private Integer temperature;
+    private Integer reading;
     private String message;
 
-    public Response(Integer temperature) {
-        this.temperature = temperature;
+    public Response(Integer reading) {
+        this.reading = reading;
     }
 }
