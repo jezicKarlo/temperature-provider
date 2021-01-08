@@ -7,6 +7,7 @@ plugins {
 
 group 'hr.fer.rassus.lti'
 version '1.0-SNAPSHOT'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -45,4 +46,21 @@ dependencyManagement {
 
 test {
     useJUnitPlatform()
+}
+
+jib {
+    from{
+        image 'openjdk:11-jre-slim'
+    }
+    to {
+        image 'temperature-provider'
+    }
+    extraDirectories {
+        paths {
+            path {
+                setFrom("script")
+                into = "${jib.container.appRoot}/script"
+            }
+        }
+    }
 }
