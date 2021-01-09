@@ -1,22 +1,18 @@
 package hr.fer.rassus.lti.service;
 
 import hr.fer.rassus.lti.repository.TemperatureRepository;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalTime;
 
 @Service
+@AllArgsConstructor
 public class TemperatureService {
-
     private final TemperatureRepository temperatureRepository;
 
-    public TemperatureService(TemperatureRepository temperatureRepository) {
-        this.temperatureRepository = temperatureRepository;
-    }
-
     public Integer fetchTemperature() {
-        int id = generateId();
-        return temperatureRepository.getById(id).getTemperature();
+        return temperatureRepository.getById(generateId()).getTemperature();
     }
 
     private int generateId() {
